@@ -24,7 +24,7 @@ namespace Salary
 			for (short i = 0; i < shifts.Length; i++)
 			{
 				EmployeeShift shift = shifts[i];
-				totalHours += Convert.ToDouble(shift.shiftTime());
+				totalHours += Convert.ToDouble(shift.shiftDurtion());
 			}
 
 			return totalHours;
