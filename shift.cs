@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 
 namespace amirProject
 {
-    class shift
+    class Shift
     {
         private DateTime startShift;
         private DateTime endShift;
         private int empId;
         //private Mission missions[];
 
-        public shift(int empId, DateTime start)
+        public Shift(int empId, DateTime start)
         {
             StreamWriter sw = new StreamWriter("E:/amirProject/amirProject/amirProject/data/now.txt");
             this.startShift = DateTime.Now;
@@ -56,7 +56,7 @@ namespace amirProject
         {
             return empId;
         }
-        public shift(DateTime startShift, DateTime endShift, int empId)
+        public Shift(DateTime startShift, DateTime endShift, int empId)
         {
             this.startShift = startShift;
             this.endShift = endShift;
