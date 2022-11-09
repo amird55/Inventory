@@ -1,29 +1,39 @@
 using System;
 
-namespace Items
+namespace Salary
 {
-    class SalaryReport
-    {
-        private readonly Employee employee;
+	class SalaryReport
+	{
+		private readonly Employee employee;
 
-        public SalaryReport(Employee employee)
-        {
-            this.employee = employee;
-        }
+		public SalaryReport(Employee employee)
+		{
+			this.employee = employee;
+		}
 
-        public double GetSalary()
-        {
-            double totalHours = 0;
-            for (int i = 0; i < this.employee.shift.Length; i++)
-            {
-                totalHours += this.employee.shift[i].shiftTime();
-            }
-            return this.employee.salaryPerHour * totalHours;
-        }
+		public double GetTotalHours()
+		{
+			// Defaults to 0
+			// https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/default-values
+			double totalHours;
 
-        public override string ToString()
-        {
-            return string.Format("Salary for {0}: {1}", this.employee.fullName, this.GetSalary());
-        }
-    }
+			for (short i = 0; i < this.employee.GetShifts().Length; i++)
+			{
+				EmployeeShift shift = this.employee.GetShifts()[i];
+				totalHours += Convert.ToDouble(shift.shiftTime());
+			}
+
+			return totalHours;
+		}
+
+		public double GetSalary()
+		{
+			return this.employee.salaryPerHour * this.employee.GetTotalHours();
+		}
+
+		public override string ToString()
+		{
+			return string.Format("Salary for {0}: {1}", this.employee.GetFullName(), this.GetSalary());
+		}
+	}
 }
