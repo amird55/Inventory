@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 
 namespace amirProject
 {
-    class Shift
+    class shift
     {
         private DateTime startShift;
         private DateTime endShift;
         private int empId;
         //private Mission missions[];
 
-        public Shift(int empId, DateTime start)
+        public shift(int empId, DateTime start)
         {
             StreamWriter sw = new StreamWriter("E:/amirProject/amirProject/amirProject/data/now.txt");
             this.startShift = DateTime.Now;
@@ -56,14 +56,15 @@ namespace amirProject
         {
             return empId;
         }
-        public Shift(DateTime startShift, DateTime endShift, int empId)
+        public shift(DateTime startShift, DateTime endShift, int empId)
         {
             this.startShift = startShift;
             this.endShift = endShift;
             this.empId = empId;
         }
 
+        public override string ToString() => $"{empId}@@{startShift}@@{endShift}";
 
-        public TimeOnly shiftDurtion() => startShift.TimeOfDay - endShift.TimeOfDay;
+        public double shiftDurtion() => (endShift - startShift).TotalHours;
     }
 }

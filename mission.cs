@@ -43,7 +43,7 @@ namespace amirProject
         {
             this.cardID = cardId;
         }
-        public int cardId()
+        public int getCardId()
         {
             return cardID;
         }
@@ -55,14 +55,6 @@ namespace amirProject
         {
             return processID;
         }
-        /*public void setCard(Card card)
-        {
-            this.card = card;
-        }*/
-        /*public Card getCard()
-        {
-            return card;
-        }*/
         public void setQuantity(int quantity)
         {
             this.quantity = quantity;
@@ -79,6 +71,6 @@ namespace amirProject
         }
         public override string ToString() => $"{cardID}@@{processID}@@{empId}@@{missiontDurtion}@@{quantity}";
 
-        public TimeOnly missiontDurtion() => start.TimeOfDay - end.TimeOfDay;
+        public double missiontDurtion() => (end - start).TotalHours;
     }
 }

@@ -50,7 +50,7 @@ namespace amirProject
             return email;
         }
 
-        public void setSalaryPerHour()
+        public void setSalaryPerHour(double salaryPerHour)
         {
             this.salaryPerHour = salaryPerHour;
         }
@@ -58,6 +58,8 @@ namespace amirProject
         {
             return salaryPerHour;
         }
+
+        public override string ToString() => $"{id}@@{fullName}@@{phone}@@{email}@@{salaryPerHour}";
         public employee(int id, string fullName, string phone, string email, double salaryPerHour)
         {
             this.id = id;
