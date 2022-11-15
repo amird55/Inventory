@@ -1,0 +1,14 @@
+C:\Users\יאיר\source\repos\liam lo yahil\liam lo yahil\bin\Debug\netcoreapp3.1\liam lo yahil.exe
+C:\Users\יאיר\source\repos\liam lo yahil\liam lo yahil\bin\Debug\netcoreapp3.1\liam lo yahil.deps.json
+C:\Users\יאיר\source\repos\liam lo yahil\liam lo yahil\bin\Debug\netcoreapp3.1\liam lo yahil.runtimeconfig.json
+C:\Users\יאיר\source\repos\liam lo yahil\liam lo yahil\bin\Debug\netcoreapp3.1\liam lo yahil.runtimeconfig.dev.json
+C:\Users\יאיר\source\repos\liam lo yahil\liam lo yahil\bin\Debug\netcoreapp3.1\liam lo yahil.dll
+C:\Users\יאיר\source\repos\liam lo yahil\liam lo yahil\bin\Debug\netcoreapp3.1\liam lo yahil.pdb
+C:\Users\יאיר\source\repos\liam lo yahil\liam lo yahil\obj\Debug\netcoreapp3.1\liam lo yahil.csproj.AssemblyReference.cache
+C:\Users\יאיר\source\repos\liam lo yahil\liam lo yahil\obj\Debug\netcoreapp3.1\liam lo yahil.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\יאיר\source\repos\liam lo yahil\liam lo yahil\obj\Debug\netcoreapp3.1\liam lo yahil.AssemblyInfoInputs.cache
+C:\Users\יאיר\source\repos\liam lo yahil\liam lo yahil\obj\Debug\netcoreapp3.1\liam lo yahil.AssemblyInfo.cs
+C:\Users\יאיר\source\repos\liam lo yahil\liam lo yahil\obj\Debug\netcoreapp3.1\liam lo yahil.csproj.CoreCompileInputs.cache
+C:\Users\יאיר\source\repos\liam lo yahil\liam lo yahil\obj\Debug\netcoreapp3.1\liam lo yahil.dll
+C:\Users\יאיר\source\repos\liam lo yahil\liam lo yahil\obj\Debug\netcoreapp3.1\liam lo yahil.pdb
+C:\Users\יאיר\source\repos\liam lo yahil\liam lo yahil\obj\Debug\netcoreapp3.1\liam lo yahil.genruntimeconfig.cache
