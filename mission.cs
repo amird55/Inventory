@@ -63,11 +63,15 @@ namespace amirProject
         {
             return quantity;
         }
-        public mission(DateTime start, DateTime end, int quantity)
+        public mission(int empId, DateTime start, DateTime end, int cardId, int processID, int quantity)
         {
+            this.empId=empId;
             this.start = start;
             this.end = end;
+            this.cardID=cardId;
+            this.processID=processID;
             this.quantity = quantity;
+
         }
         public override string ToString() => $"{cardID}@@{processID}@@{empId}@@{missiontDurtion}@@{quantity}";
 
