@@ -23,7 +23,7 @@ namespace Salary
 			// Increments totalHours by the shift time for each shift
 			for (short i = 0; i < shifts.Length; i++)
 			{
-				EmployeeShift shift = shifts[i];
+				Shift shift = shifts[i];
 				totalHours += Convert.ToDouble(shift.shiftDurtion());
 			}
 
